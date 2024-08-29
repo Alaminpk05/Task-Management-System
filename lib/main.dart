@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager_system/features/bottom_nav_bar/presentation/screens/bottom_nav.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,13 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        useMaterial3: false,
       ),
-      home:Scaffold(
-        appBar: AppBar(
-          title: Text("Task manager "),
-        ),
-      )
+        debugShowCheckedModeBanner: false,
+      home:BottomNav()
+
+
     );
   }
 }
