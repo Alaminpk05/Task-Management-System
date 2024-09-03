@@ -9,7 +9,7 @@ import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';
 import 'package:task_manager_system/features/completed.dart';
 import 'package:task_manager_system/features/task/presentation/pending.dart';
 import 'package:task_manager_system/features/reminders.dart';
-import 'package:task_manager_system/features/reports.dart';
+import 'package:task_manager_system/features/report/presentation/reports.dart';
 
 
 
@@ -109,8 +109,9 @@ class _BottomNavState extends State<BottomNav> {
         ),
 
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: FloatingActionButton(
+      floatingActionButtonLocation:
+      FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: index==0?FloatingActionButton(
         backgroundColor: Color.fromRGBO(0, 188, 212,1),
         shape:  CircleBorder(),
           child: Icon(Icons.edit,color: Colors.black,),
@@ -122,7 +123,7 @@ class _BottomNavState extends State<BottomNav> {
                   return AddTaskCard();
           });
 
-          }),
+          }):null,
 
     );
   }

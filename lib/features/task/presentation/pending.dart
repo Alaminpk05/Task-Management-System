@@ -12,8 +12,8 @@ class Pending extends StatelessWidget {
       child: Scaffold(
         
         body: SingleChildScrollView(
-          child: Padding(
-            padding:EdgeInsets.symmetric(horizontal: 3.w,vertical: 3.h),
+          child: Container(
+            margin:EdgeInsets.symmetric(horizontal: 3.w,vertical: 3.h),
             child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           
